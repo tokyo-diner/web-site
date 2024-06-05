@@ -1,27 +1,31 @@
-# Diner
+# 株式会社東京ダイナー
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+## テキスト更新用リンク
 
-## Development server
+| 項目    | ファイル                                                                        |
+|-------| ------------------------------------------------------------------------------- |
+| rece  | https://github.com/tokyo-diner/web-site/blob/main/src/data/rece.ts  |
+| ckj   | https://github.com/tokyo-diner/web-site/blob/main/src/data/ckj.ts |
+| 問い合わせ | https://github.com/tokyo-diner/web-site/blob/main/src/data/contact.ts    |
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### 更新に失敗した
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ビルドに必要な情報を間違って削除してしまったり、フォーマットを変更してしまった時、Webサイトには反映されずに更新できなかったという通知が更新を行ったユーザのメールアドレスにいきます。更新後に反映されなかった場合は、メールをご確認ください。
 
-## Build
+## 構成
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 本体
 
-## Running unit tests
+Angular SSRのPrerendering（SSG）で構築されています。SSRを必要としない構成であることから、ビルドファイルの `server` はアップロードしません。
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## ライセンス
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### テキスト・写真データ
 
-## Further help
+本レポジトリにあるテキスト、写真データは著作権を株式会社東京ダイナー が有しており、**オープンソースではありません**。本レポジトリをForkすることの制限はありませんが、それ以外の場所で引用の範囲を越える利用については固くお断りしています。
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### ソースコード
+
+ソースコード（テキスト・写真データ以外）はMITライセンスで公開しています。
