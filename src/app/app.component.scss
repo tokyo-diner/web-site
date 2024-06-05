@@ -23,6 +23,10 @@ main {
     position: relative;
     color: #ffffff;
 
+    &:first-child {
+      background: #333333;
+    }
+
     &::after {
       content: '';
       position: absolute;
