@@ -9,7 +9,8 @@
     "test": "ng test",
     "serve:ssr:diner": "node dist/diner/server/server.mjs",
     "lint": "ng lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "fmt": "prettier --parser typescript --write \"./src/**/*.ts\" &&  prettier --parser angular --write \"./src/**/*.html\""
   },
   "private": true,
   "dependencies": {
