@@ -1,0 +1,27 @@
+footer {
+  background: #333333;
+  div.copy-right {
+    color: #ffffff;
+    padding-bottom: 16px;
+
+    h2 {
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    h3 {
+      font-size: 1.25rem;
+      font-weight: normal;
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-family: "Rubik", sans-serif;
+    }
+  }
+  table {
+    th {
+      font-weight: normal;
+      text-align: right;
+      padding-right: 16px;
+      min-width: 100px;
+    }
+  }
+}

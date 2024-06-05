@@ -1,0 +1,27 @@
+header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px 4px;
+  position: relative;
+  z-index: 9999;
+  h1 {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 12px 14px;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: normal;
+
+    ion-icon {
+      position: relative;
+      top: 4px;
+    }
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0 2px 4px -1px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 48px 0 48px;
+    font-weight: normal;
+  }
+}

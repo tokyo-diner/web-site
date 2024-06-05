@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import "reset";
+@import "app/app.component";
+@import "app/header";
+@import "app/footer";
+
+body {
+  margin: 0;
+  color: #333333;
+
+  font-family: 'M PLUS 1p', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
