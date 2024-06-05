@@ -65,7 +65,7 @@ export class AppComponent {
       ? `電話番号： ${this.contactModel.tel}\r\n\r\n`
       : '';
     const result = await firstValueFrom(
-      this.http.post('https://api.v5.tipsys.me/thirdparty/rdlabo/mail', {
+      this.http.post('https://api.v5.tipsys.me/thirdparty/diner/mail', {
         from: this.contactModel.email,
         name: this.contactModel.name,
         message: preMessage + this.contactModel.message,
