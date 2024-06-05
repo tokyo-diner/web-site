@@ -1,7 +1,7 @@
 import { Message } from '../app/types';
 
 export const rece = (): Message => ({
-  header: '日本橋/イタリアン <span>race</span>',
+  header: '日本橋/イタリアン <span class="font-rubik">race</span>',
   subHeader: 'ソムリエがいるイタリアン。',
   message:
     '最初のひとくちから最後のひとくちまで驚きと感動を与える、原点回帰の王道イタリアン。 イタリア政府公認店で腕をふるったシェフと、ソムリエが織りなす至福のひとときをお楽しみください。',
