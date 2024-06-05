@@ -23,6 +23,8 @@ import { firstValueFrom } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { contact } from '../data/contact';
+import { rece } from '../data/rece';
+import { ckj } from '../data/ckj';
 
 @Component({
   selector: 'app-root',
@@ -33,8 +35,10 @@ import { contact } from '../data/contact';
 })
 export class AppComponent {
   public contactModel: ContactModel = defaultContactModel();
-  isSend = signal<boolean>(false);
-  contact = signal<string[]>(contact());
+  readonly contact = contact();
+  readonly rece = rece();
+  readonly ckj = ckj();
+  readonly isSend = signal<boolean>(false);
 
   private http = inject(HttpClient);
 

@@ -1,13 +1,11 @@
 export type Message = {
-  title: string;
-  lead: string;
+  header: string;
+  subHeader: string;
   message: string;
-  images: GeneratedImageType[];
-};
-
-export type Messages = {
-  shukigawa: Message;
-  takarazuka: Message;
+  attribute: {
+    icon: string;
+    value: string;
+  }[];
 };
 
 export type ContactModel = {
@@ -34,19 +32,3 @@ export interface IRequestRdlaboMail {
   name: string;
   message: string;
 }
-
-export type GeneratedImageType = {
-  height: number;
-  orientation?: number;
-  width: number;
-  type: string;
-  path: string;
-  resize: {
-    [width: number]: {
-      height: number;
-      width: number;
-      type: string;
-      path: string;
-    };
-  };
-};

@@ -9,44 +9,19 @@
     <section class="section-width">
       <h2><span>飲食店事業</span></h2>
       <div class="inner">
-        <h3>日本橋/イタリアン <span class="font-rubik">rece</span></h3>
-        <h4>ソムリエがいるイタリアン。</h4>
-        <p>
-          最初のひとくちから最後のひとくちまで驚きと感動を与える、原点回帰の王道イタリアン。
-          イタリア政府公認店で腕をふるったシェフと、ソムリエが織りなす至福のひとときをお楽しみください。
-        </p>
+        <h3 [innerHtml]="rece.header"></h3>
+        <h4 [innerHtml]="rece.subHeader"></h4>
+        <p [innerHtml]="rece.message"></p>
 
         <div class="shop-information">
           <address>
             <ul>
-              <li>
-                <ion-icon name="call"></ion-icon
-                ><span>電話　<a href="tel:03-6875-0791">03-6875-0791</a></span>
-              </li>
-              <li>
-                <ion-icon name="sunny"></ion-icon
-                ><span>ランチ　12:00〜15:00（土日祝のみ）</span>
-              </li>
-              <li>
-                <ion-icon name="moon"></ion-icon
-                ><span>ディナー　17:30〜23:30</span>
-              </li>
-              <li>
-                <ion-icon name="lock-closed"></ion-icon
-                ><span>定休日　月曜日</span>
-              </li>
-              <li>
-                <ion-icon name="map"></ion-icon
-                ><span>東京都中央区日本橋2-16-3 ブリリアンビル 1F</span>
-              </li>
-              <li>
-                <ion-icon name="bookmark"></ion-icon>
-                <span
-                  ><a href="https://rece-nihombashi.com/" target="_blank"
-                    >rece-nihombashi.com</a
-                  ></span
-                >
-              </li>
+              @for (item of rece.attribute; track item.value) {
+                <li>
+                  <ion-icon [name]="item.icon"></ion-icon
+                  ><span [innerHtml]="item.value"></span>
+                </li>
+              }
             </ul>
           </address>
           <iframe
@@ -68,46 +43,19 @@
     <section class="section-width">
       <h2><span>飲食店事業</span></h2>
       <div class="inner">
-        <h3>広尾/中華 <span class="font-rubik">CKJ</span></h3>
-        <h4>中華とワイン、ただそれだけ。</h4>
-        <p>
-          こだわりの食材に惜しむことのない手間を重ねた一皿。それに寄り添うようにグラスに注がれる個性豊かなワイン達。
-          「中華が」ではなく「ワインが」でもなく、「中華とワイン」のマリアージュをお楽しみいただけます。
-        </p>
+        <h3 [innerHtml]="ckj.header"></h3>
+        <h4 [innerHtml]="ckj.subHeader"></h4>
+        <p [innerHtml]="ckj.message"></p>
 
         <div class="shop-information">
           <address>
             <ul>
-              <li>
-                <ion-icon name="call"></ion-icon
-                ><span
-                  >電話　<a href="tel:070-8969-2128">070-8969-2128</a></span
-                >
-              </li>
-              <li>
-                <ion-icon name="sunny"></ion-icon
-                ><span>ランチ　12:00〜15:00</span>
-              </li>
-              <li>
-                <ion-icon name="moon"></ion-icon
-                ><span>ディナー　17:30〜22:30</span>
-              </li>
-              <li>
-                <ion-icon name="lock-closed"></ion-icon
-                ><span>定休日　日曜日</span>
-              </li>
-              <li>
-                <ion-icon name="map"></ion-icon
-                ><span>東京都渋谷区広尾1-1-36 PASEO恵比寿 3F</span>
-              </li>
-              <li>
-                <ion-icon name="bookmark"></ion-icon>
-                <span
-                  ><a href="https://ckj-ebis.com/" target="_blank"
-                    >ckj-ebis.com</a
-                  ></span
-                >
-              </li>
+              @for (item of ckj.attribute; track item.value) {
+                <li>
+                  <ion-icon [name]="item.icon"></ion-icon
+                  ><span [innerHtml]="item.value"></span>
+                </li>
+              }
             </ul>
           </address>
           <iframe
@@ -145,7 +93,7 @@
         </p>
       } @else {
         <ul>
-          @for (item of contact(); track item) {
+          @for (item of contact; track item) {
             <li>{{ item }}</li>
           }
         </ul>
