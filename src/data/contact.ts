@@ -1,5 +1,3 @@
-import { Message } from '../app/types';
-
 /**
  * 問い合わせに関するライティングです
  */
