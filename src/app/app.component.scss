@@ -168,25 +168,28 @@ main {
       position: relative;
       top: -1px;
     }
-
-    .text-center {
-      text-align: center;
-    }
-
-    button.submitButton {
-      background: transparent;
-      font-size: 0.9rem;
-      border-radius: 4px;
-      border: 1px solid #333333;
-      padding: 8px;
-      color: #333333;
-
-      &[disabled] {
-        opacity: 0.5;
-      }
-    }
-
   }
+  .text-center {
+    text-align: center;
+  }
+
+  button.submitButton {
+    background: transparent;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    border: 1px solid #333333;
+    padding: 8px;
+    color: #333333;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &[disabled] {
+      opacity: 0.5;
+    }
+  }
+
   ul {
     list-style: none;
     padding: 0;

@@ -61,6 +61,7 @@ export class AppComponent {
   }
 
   async send() {
+    this.isSend.set(true);
     const preMessage = this.contactModel.tel
       ? `電話番号： ${this.contactModel.tel}\r\n\r\n`
       : '';
@@ -75,9 +76,9 @@ export class AppComponent {
       .catch(() => false);
 
     if (result) {
-      this.isSend.set(true);
       this.contactModel = defaultContactModel();
     } else {
+      this.isSend.set(false);
       alert(
         'メッセージの送信に失敗しました。時間を置いてから再度お試しください。',
       );
