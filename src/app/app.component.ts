@@ -28,9 +28,9 @@ import { ckj } from '../data/ckj';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   imports: [CommonModule, FormsModule, IonIcon],
   templateUrl: './app.component.html',
+  standalone: true,
   encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
