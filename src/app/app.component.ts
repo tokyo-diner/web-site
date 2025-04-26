@@ -1,4 +1,10 @@
-import { Component, inject, signal, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  inject,
+  signal,
+  ViewEncapsulation,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
@@ -32,6 +38,7 @@ import { ckj } from '../data/ckj';
   templateUrl: './app.component.html',
   standalone: true,
   encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AppComponent {
   public contactModel: ContactModel = defaultContactModel();
