@@ -5,7 +5,7 @@ import {
   signal,
   ViewEncapsulation,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { IonIcon } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import {
@@ -34,7 +34,7 @@ import { ckj } from '../data/ckj';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, FormsModule, IonIcon],
+  imports: [FormsModule, IonIcon],
   templateUrl: './app.component.html',
   standalone: true,
   encapsulation: ViewEncapsulation.None,
