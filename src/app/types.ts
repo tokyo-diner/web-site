@@ -1,4 +1,4 @@
-export type Message = {
+export interface Message {
   header: string;
   subHeader: string;
   message: string;
@@ -6,16 +6,16 @@ export type Message = {
     icon: string;
     value: string;
   }[];
-};
+}
 
-export type ContactModel = {
+export interface ContactModel {
   name: string;
   email: string;
   tel: string;
   message: string;
-};
+}
 
-export type Recruit = {
+export interface Recruit {
   message: string;
   recruit: {
     type: string;
@@ -24,7 +24,7 @@ export type Recruit = {
       value: string;
     }[];
   }[];
-};
+}
 
 // endpoint: https://api.v5.tipsys.me/thirdparty/concent/mail
 export interface IRequestRdlaboMail {
