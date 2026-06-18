@@ -12,7 +12,7 @@
     "prepare": "husky install",
     "fmt": "prettier --parser typescript --write \"./src/**/*.ts\" &&  prettier --parser angular --write \"./src/**/*.html\""
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^21.2.1",
     "@angular/common": "^21.2.1",
