@@ -1,10 +1,11 @@
 name: Unit Tests (vitest)
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened]
+  push:
+    branches: [main]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
