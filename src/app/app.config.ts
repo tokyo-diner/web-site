@@ -3,13 +3,16 @@ import {
   provideZonelessChangeDetection,
 } from '@angular/core';
 
-import { provideClientHydration } from '@angular/platform-browser';
-import { provideHttpClient } from '@angular/common/http';
+import {
+  provideClientHydration,
+  withNoIncrementalHydration,
+} from '@angular/platform-browser';
+import { provideHttpClient, withXhr } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
   providers: [
-    provideClientHydration(),
-    provideHttpClient(),
+    provideClientHydration(withNoIncrementalHydration()),
+    provideHttpClient(withXhr()),
     provideZonelessChangeDetection(),
   ],
 };
